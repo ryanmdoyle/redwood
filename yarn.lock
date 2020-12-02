@@ -3779,17 +3779,17 @@
   resolved "https://registry.yarnpkg.com/@tootallnate/once/-/once-1.1.2.tgz#ccb91445360179a04e7fe6aff78c00ffc1eeaf82"
   integrity sha512-RbzJvlNzmRq5c3O09UipeuXno4tA1FE6ikOjxZK0tuxVv3412l64l5t1W5pj4+rJq9vpkm/kwiR07aZXnsKPxw==
 
-"@ts-morph/common@~0.6.0":
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/@ts-morph/common/-/common-0.6.0.tgz#cbd4ee57c5ef971511b9c5778e0bb8eb27de4783"
-  integrity sha512-pI35nZz5bs3tL3btSVX2cWkAE8rc80F+Fn4TwSC6bQvn7fgn9IyLXVcAfpG6X6NBY5wN9TkSWXn/QYUkBvR/Fw==
+"@ts-morph/common@~0.7.0":
+  version "0.7.2"
+  resolved "https://registry.yarnpkg.com/@ts-morph/common/-/common-0.7.2.tgz#b937d13376695146735aecec6af4573cee513a56"
+  integrity sha512-XyUPLf1UHtteP5C5FEgVJqgIEOcmaSEoJyU/jQ1gTBKlz/lb1Uss4ix+D2e5qRwPFiBMqM/jwJpna0yVDE5V/g==
   dependencies:
     "@dsherret/to-absolute-glob" "^2.0.2"
     fast-glob "^3.2.4"
-    fs-extra "^9.0.1"
     is-negated-glob "^1.0.0"
-    multimatch "^4.0.0"
-    typescript "~4.0.2"
+    mkdirp "^1.0.4"
+    multimatch "^5.0.0"
+    typescript "~4.1.2"
 
 "@types/accepts@*":
   version "1.3.5"
@@ -6908,10 +6908,10 @@ coa@^2.0.2:
     chalk "^2.4.1"
     q "^1.1.2"
 
-code-block-writer@^10.1.0:
-  version "10.1.0"
-  resolved "https://registry.yarnpkg.com/code-block-writer/-/code-block-writer-10.1.0.tgz#54fc410ebef2af836d9c2314ac40af7d7b37eee9"
-  integrity sha512-RG9hpXtWFeUWhuUav1YuP/vGcyncW+t90yJLk9fNZs1De2OuHTHKAKThVCokt29PYq5RoJ0QSZaIZ+rvPO23hA==
+code-block-writer@^10.1.1:
+  version "10.1.1"
+  resolved "https://registry.yarnpkg.com/code-block-writer/-/code-block-writer-10.1.1.tgz#ad5684ed4bfb2b0783c8b131281ae84ee640a42f"
+  integrity sha512-67ueh2IRGst/51p0n6FvPrnRjAGHY5F8xdjkgrYE7DDzpJe6qA07RYQ9VcoUeo5ATOjSOiWpSL3SWBRRbempMw==
 
 code-point-at@^1.0.0:
   version "1.1.0"
@@ -13537,10 +13537,10 @@ multimatch@^3.0.0:
     arrify "^1.0.1"
     minimatch "^3.0.4"
 
-multimatch@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/multimatch/-/multimatch-4.0.0.tgz#8c3c0f6e3e8449ada0af3dd29efb491a375191b3"
-  integrity sha512-lDmx79y1z6i7RNx0ZGCPq1bzJ6ZoDDKbvh7jxr9SJcWLkShMzXrHbYVpTdnhNM5MXpDUxCQ4DgqVttVXlBgiBQ==
+multimatch@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/multimatch/-/multimatch-5.0.0.tgz#932b800963cea7a31a033328fa1e0c3a1874dbe6"
+  integrity sha512-ypMKuglUrZUD99Tk2bUQ+xNQj43lPEfAeX2o9cTteAmShXy2VHDJpuwu1o0xqoKCt9jLVAvwyFKdLTPXKAfJyA==
   dependencies:
     "@types/minimatch" "^3.0.3"
     array-differ "^3.0.0"
@@ -17719,14 +17719,14 @@ ts-invariant@^0.4.0, ts-invariant@^0.4.4:
   dependencies:
     tslib "^1.9.3"
 
-ts-morph@^8.1.0:
-  version "8.1.2"
-  resolved "https://registry.yarnpkg.com/ts-morph/-/ts-morph-8.1.2.tgz#f0bee6be6fbd8c3174ac5d6c0423a035e36c2bbd"
-  integrity sha512-5w4TzmMzECrBunIku1T6/Y0Y2IJ9sHT6hAlfF59WugXnsq1dv6DSioA+s6LgUiswxjgaJgZndOKgu8BrLcYjKw==
+ts-morph@^9.1.0:
+  version "9.1.0"
+  resolved "https://registry.yarnpkg.com/ts-morph/-/ts-morph-9.1.0.tgz#10d2088387c71f3c674f82492a3cec1e3538f0dd"
+  integrity sha512-sei4u651MBenr27sD6qLDXN3gZ4thiX71E3qV7SuVtDas0uvK2LtgZkIYUf9DKm/fLJ6AB/+yhRJ1vpEBJgy7Q==
   dependencies:
     "@dsherret/to-absolute-glob" "^2.0.2"
-    "@ts-morph/common" "~0.6.0"
-    code-block-writer "^10.1.0"
+    "@ts-morph/common" "~0.7.0"
+    code-block-writer "^10.1.1"
 
 ts-pnp@^1.1.2:
   version "1.2.0"
@@ -17878,10 +17878,15 @@ typescript-transform-paths@^2.0.2:
   resolved "https://registry.yarnpkg.com/typescript-transform-paths/-/typescript-transform-paths-2.0.2.tgz#7040eab666f1921fb4b08ee0a0f21d77403187df"
   integrity sha512-LRGd/pf73zN275t6Zz6TA3N1jeEHYRnHuiNHUwrGZmFuwt+dmiWeNklz+/e1IcCc5dA6LDI+F+ALe5NyyVFSVQ==
 
-typescript@^4.0.2, typescript@~4.0.2:
+typescript@^4.0.2:
   version "4.0.3"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.0.3.tgz#153bbd468ef07725c1df9c77e8b453f8d36abba5"
   integrity sha512-tEu6DGxGgRJPb/mVPIZ48e69xCn2yRmCgYmDugAVwmJ6o+0u1RI18eO7E7WBTLYLaEVVOhwQmcdhQHweux/WPg==
+
+typescript@~4.1.2:
+  version "4.1.2"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.1.2.tgz#6369ef22516fe5e10304aae5a5c4862db55380e9"
+  integrity sha512-thGloWsGH3SOxv1SoY7QojKi0tc+8FnOmiarEGMbd/lar7QOEd3hvlx3Fp5y6FlDUGl9L+pd4n2e+oToGMmhRQ==
 
 ua-parser-js@^0.7.18:
   version "0.7.22"
